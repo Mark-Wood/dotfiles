@@ -1,0 +1,22 @@
+[http]
+	postBuffer = 524288000
+[alias]
+	lg = log --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	lgm = log --graph --pretty=format:'%C(auto)%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --stat --first-parent -m
+	pgm = pull github master
+	pom = pull origin master
+	pgd = pull github develop
+	pod = pull origin develop
+	dc = diff --cached
+	a = add --all
+	st = status
+	redo = reset --mixed HEAD~1
+	cim = commit -m
+	ciam = commit -a -m
+	stat = show --stat
+	amend = commit --amend
+	wip = "!f() { git add -A; git commit -n -m \"wip $1\"; }; f"
+[apply]
+	whitespace = nowarn
+[push]
+	default = current
