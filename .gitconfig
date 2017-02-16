@@ -16,7 +16,12 @@
 	stat = show --stat
 	amend = commit --amend
 	wip = "!f() { git add -A; git commit -n -m \"wip $1\"; }; f"
+    mt = mergetool
 [apply]
 	whitespace = nowarn
 [push]
 	default = current
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+
