@@ -22,3 +22,12 @@ set smarttab
 " 1 tab == 4 spaces
 set shiftwidth=4
 set tabstop=4
+
+" Show line numbers
+set number
+
+" Highlight search results
+set hlsearch
+
+" Use system clipboard as default buffer
+set clipboard=unnamedplus
