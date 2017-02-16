@@ -31,3 +31,9 @@ set hlsearch
 
 " Use system clipboard as default buffer
 set clipboard=unnamedplus
+
+" Solarized
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_diffmode="high"
