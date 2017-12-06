@@ -1,0 +1,53 @@
+" Pro tip for MacVim on retina displays: Get the sexy font rendering used by Termial.app/iTerm:
+" defaults write org.vim.MacVim AppleFontSmoothing -int 0
+
+" Gutter color default is annoying. Make it blend in.
+hi SignColumn guibg=NONE
+
+hi Search term=NONE ctermfg=0 ctermbg=14 guifg=#ffffff guibg=#444444
+
+" Command-Shift-F is fullscreen.
+nmap <D-F> :set fullscreen!<CR>
+
+colorscheme nord
+hi link ALEWarningSign WarningMsg
+hi link ALEErrorSign ErrorMsg
+let g:nord_italic_comments = 1
+let g:nord_uniform_status_lines = 1
+let g:lightline.colorscheme = 'nord'
+call g:lightline#init()
+set guifont=Essential\ PragmataPro:h14
+
+" Going back to Ctrl-P until FZF works well in MacVim :(
+" https://github.com/junegunn/fzf/issues/1108
+nmap <C-p> :bprev<CR>
+nmap ; :CtrlPBuffer<CR>
+nmap <Leader>r :CtrlPTag<CR>
+nmap <Leader>t :CtrlP<CR>
+let g:ctrlp_map = '<Leader>p'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_prompt_mappings = {
+  \ 'PrtSelectMove("j")':   ['<c-n>'],
+  \ 'PrtSelectMove("k")':   ['<c-p>'],
+  \ 'PrtHistory(-1)':       ['<c-down>'],
+  \ 'PrtHistory(1)':        ['<c-up>'],
+  \ }
+"let $FZF_DEFAULT_OPTS="--color fg:242,bg:233,hl:65,fg+:15,bg+:234,hl+:108 --color info:108,prompt:109,spinner:108,pointer:168,marker:168"
+
+set columns=80 lines=50
+set errorbells
+set fuoptions=maxhorz,maxvert
+set guicursor+=a:blinkon0
+set guioptions=aigm
+set mousemodel=popup
+set nocursorline
+set nonumber
+set scrolloff=15
+set sidescrolloff=6
+set transparency=0
+set visualbell
+
+" Now load specifics to this machine.
+if filereadable(expand("~/.gvimlocal"))
+  source ~/.gvimlocal
+endif
