@@ -9,7 +9,10 @@
 [gist]
 	private = yes
 [github]
-	user = statico
+	user = mark-wood
+[user]
+	email = markozywood@gmail.com
+	name = "Mark Wood"
 [alias]
 	am = commit --amend --no-edit
 	ama = commit --amend --no-edit -a
