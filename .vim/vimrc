@@ -13,35 +13,14 @@
 
 " Useful macros I use the most
 nmap \A :set formatoptions+=a<CR>:echo "autowrap enabled"<CR>
-nmap \M :set noexpandtab tabstop=8 softtabstop=4 shiftwidth=4<CR>
-nmap \T :set expandtab tabstop=8 shiftwidth=8 softtabstop=4<CR>
 nmap \a :set formatoptions-=a<CR>:echo "autowrap disabled"<CR>
-nmap \b :set nocin tw=80<CR>:set formatoptions+=a<CR>
 nmap \c :call TmuxPaneClear()<CR>
-nmap \d :ALEToggleBuffer<CR>
 nmap \e :NERDTreeToggle<CR>
-nmap \f mt:Goyo<CR>'tzz
-nmap \g :Gstatus<CR>
 nmap \i vip:sort<CR>
-nmap \l :setlocal number!<CR>:setlocal number?<CR>
 nmap \m :set expandtab tabstop=2 shiftwidth=2 softtabstop=2<CR>
-nmap \o :set paste!<CR>:set paste?<CR>
-nmap \p :ProseMode<CR>
-nmap \q :nohlsearch<CR>
 nmap \r :call TmuxPaneRepeat()<CR>
 nmap \s :setlocal invspell<CR>
 nmap \t :set expandtab tabstop=4 shiftwidth=4 softtabstop=4<CR>
-nmap \u :setlocal list!<CR>:setlocal list?<CR>
-nmap \w :setlocal wrap!<CR>:setlocal wrap?<CR>
-nmap \x :cclose<CR>
-nmap \z :w<CR>:!open %<CR><CR>
-
-" Turn off linewise keys. Normally, the `j' and `k' keys move the cursor down one entire line. with
-" line wrapping on, this can cause the cursor to actually skip a few lines on the screen because
-" it's moving from line N to line N+1 in the file. I want this to act more visually -- I want `down'
-" to mean the next line on the screen
-nmap j gj
-nmap k gk
 
 " You don't know what you're missing if you don't use this.
 nmap <C-e> :e#<CR>
@@ -49,32 +28,6 @@ nmap <C-e> :e#<CR>
 " Move between open buffers.
 nmap <C-n> :bnext<CR>
 nmap <C-p> :bprev<CR>
-
-" Emacs-like bindings in normal mode
-nmap <C-x>0 <C-w>c
-nmap <C-x>1 <C-w>o
-nmap <C-x>1 <C-w>s
-nmap <C-x>1 <C-w>v
-nmap <C-x>o <C-w><C-w>
-nmap <M-o>  <C-w><C-w>
-
-" Emacs-like bindings in insert mode
-imap <C-e> <C-o>$
-imap <C-a> <C-o>0
-
-" Emacs-like bindings in the command line from `:h emacs-keys`
-cnoremap <C-a>  <Home>
-cnoremap <C-b>  <Left>
-cnoremap <C-f>  <Right>
-cnoremap <C-d>  <Del>
-cnoremap <C-e>  <End>
-cnoremap <M-b>  <S-Left>
-cnoremap <M-f>  <S-Right>
-cnoremap <M-d>  <S-right><Delete>
-cnoremap <Esc>b <S-Left>
-cnoremap <Esc>f <S-Right>
-cnoremap <Esc>d <S-right><Delete>
-cnoremap <C-g>  <C-c>
 
 " Use the space key to toggle folds
 nnoremap <space> za
@@ -205,24 +158,22 @@ set matchtime=2             " Tenths of second to hilight matching paren
 set modelines=5             " How many lines of head & tail to look for ml's
 silent! set mouse=nvc       " Use the mouse, but not in insert mode
 set nobackup                " No backups left after done editing
-set nonumber                " No line numbers to start
+set number                  " Show line numbers
 set visualbell t_vb=        " No flashing or beeping at all
-set nowritebackup           " No backups made while editing
-set printoptions=paper:letter " US paper
 set ruler                   " Show row/col and percentage
 set scroll=4                " Number of lines to scroll with ^U/^D
-set scrolloff=15            " Keep cursor away from this many chars top/bot
+set scrolloff=8             " Keep cursor away from this many chars top/bot
 set sessionoptions-=options " Don't save runtimepath in Vim session (see tpope/vim-pathogen docs)
 set shiftround              " Shift to certain columns, not just n spaces
-set shiftwidth=2            " Number of spaces to shift for autoindent or >,<
+set shiftwidth=4            " Number of spaces to shift for autoindent or >,<
 set shortmess+=A            " Don't bother me when a swapfile exists
 set showbreak=              " Show for lines that have been wrapped, like Emacs
 set showmatch               " Hilight matching braces/parens/etc.
 set sidescrolloff=3         " Keep cursor away from this many chars left/right
 set smartcase               " Lets you search for ALL CAPS
-set softtabstop=2           " Spaces 'feel' like tabs
+set softtabstop=4           " Spaces 'feel' like tabs
 set suffixes+=.pyc          " Ignore these files when tab-completing
-set tabstop=2               " The One True Tab
+set tabstop=4               " The One True Tab
 set textwidth=100           " 100 is the new 80
 set thesaurus+=~/.vim/mthes10/mthesaur.txt
 set notitle                 " Don't set the title of the Vim window
@@ -348,9 +299,6 @@ highlight link MatchParen Search
 
 " Custom colors for NERDTree
 highlight def link NERDTreeRO NERDTreeFile
-
-" Make trailing spaces very visible
-highlight SpecialKey ctermbg=Yellow guibg=Yellow
 
 " Make menu selections visible
 highlight PmenuSel ctermfg=black ctermbg=magenta
