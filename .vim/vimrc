@@ -258,6 +258,8 @@ if !has('gui_running')
   endif
 endif
 syntax on
+highlight Normal ctermbg=NONE
+highlight nonText ctermbg=NONE
 
 " Window splits & ruler are too bright, so change to white on grey (non-GUI)
 highlight StatusLine       cterm=NONE ctermbg=blue ctermfg=white
