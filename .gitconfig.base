@@ -103,3 +103,5 @@
 	default = simple
 [rerere]
 	enabled = true
+[credential]
+	helper = store
