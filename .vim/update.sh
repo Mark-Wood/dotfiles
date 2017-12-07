@@ -6,39 +6,39 @@
 
 repos=(
 
-  airblade/vim-gitgutter
-  alampros/vim-styled-jsx
+  #airblade/vim-gitgutter
+  #alampros/vim-styled-jsx
   altercation/vim-colors-solarized
-  ap/vim-css-color
-  arcticicestudio/nord-vim
-  docunext/closetag.vim
+  #ap/vim-css-color
+  #arcticicestudio/nord-vim
+  #docunext/closetag.vim
   ervandew/supertab
-  haya14busa/incsearch.vim
+  #haya14busa/incsearch.vim
   itchyny/lightline.vim
-  jparise/vim-graphql
+  #jparise/vim-graphql
   junegunn/fzf.vim
-  junegunn/goyo.vim
-  kien/ctrlp.vim
-  mhartington/oceanic-next
+  #junegunn/goyo.vim
+  #kien/ctrlp.vim
+  #mhartington/oceanic-next
   mileszs/ack.vim
-  nathanaelkane/vim-indent-guides
-  qpkorr/vim-bufkill
-  scrooloose/nerdtree
+  #nathanaelkane/vim-indent-guides
+  #qpkorr/vim-bufkill
+  #scrooloose/nerdtree
   sheerun/vim-polyglot
-  statico/vim-inform7
+  #statico/vim-inform7
   tomasr/molokai
   tpope/vim-commentary
-  tpope/vim-endwise
-  tpope/vim-eunuch
-  tpope/vim-fugitive
+  #tpope/vim-endwise
+  #tpope/vim-eunuch
+  #tpope/vim-fugitive
   tpope/vim-pathogen
   tpope/vim-repeat
-  tpope/vim-rhubarb
-  tpope/vim-sleuth
-  tpope/vim-surround
-  tpope/vim-unimpaired
-  w0rp/ale
-  wellle/targets.vim
+  #tpope/vim-rhubarb
+  #tpope/vim-sleuth
+  #tpope/vim-surround
+  #tpope/vim-unimpaired
+  #w0rp/ale
+  #wellle/targets.vim
 
 )
 
