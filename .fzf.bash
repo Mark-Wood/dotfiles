@@ -2,7 +2,6 @@
 # ---------
 
 if [ -e ~/.linuxbrew/opt/fzf/bin ]; then
-  _append_to_path ~/.linuxbrew/opt/fzf/bin
   source ~/.linuxbrew/opt/fzf/shell/completion.bash 2> /dev/null
   source ~/.linuxbrew/opt/fzf/shell/key-bindings.bash
 fi
