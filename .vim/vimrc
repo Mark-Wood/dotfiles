@@ -292,7 +292,7 @@ highlight! def link LineNr Ignore
 
 " Custom search colors
 highlight clear Search
-highlight Search term=NONE cterm=NONE ctermfg=white ctermbg=black
+highlight Search term=NONE cterm=NONE ctermfg=black ctermbg=81
 
 " Make hilighted matching parents less annoying
 highlight clear MatchParen
