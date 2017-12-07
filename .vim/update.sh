@@ -23,7 +23,7 @@ repos=(
   mileszs/ack.vim
   #nathanaelkane/vim-indent-guides
   #qpkorr/vim-bufkill
-  #scrooloose/nerdtree
+  scrooloose/nerdtree
   sheerun/vim-polyglot
   #statico/vim-inform7
   tomasr/molokai
