@@ -85,20 +85,14 @@
 	decorate = short
 [push]
 	default = current
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+[mergetool "vimdiff3"]
+	cmd = vim -d \"$LOCAL\" \"$MERGED\" \"$REMOTE\" -c \"wincmd l\"
 	trustExitCode = true
-[diff]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
+[merge]
+	tool = vimdiff3
 [mergetool]
 	prompt = false
 	keepBackup = false
-[merge]
-	tool = Kaleidoscope
 [pull]
 	default = simple
 [rerere]
