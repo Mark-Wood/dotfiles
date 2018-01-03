@@ -83,6 +83,7 @@
 	mergeoptions = --no-ff
 [log]
 	decorate = short
+	date=rfc
 [push]
 	default = current
 [mergetool "vimdiff3"]
