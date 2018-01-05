@@ -90,8 +90,6 @@
 [mergetool]
 	prompt = false
 	keepBackup = false
-[pull]
-	default = simple
 [rerere]
 	enabled = true
 [credential]
