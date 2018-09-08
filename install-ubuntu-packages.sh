@@ -19,7 +19,7 @@ sudo ln -sf /usr/local/bin/vimdiff /etc/alternatives/vimdiff
 # Install brew
 sudo apt install linuxbrew-wrapper # Install wrapper
 brew --help # Install application
-export PATH=$HOME/.linuxbrew/bin:$PATH
+export PATH="$HOME/.linuxbrew/bin:$PATH"
 
 # Install fzf
 brew install fzf
