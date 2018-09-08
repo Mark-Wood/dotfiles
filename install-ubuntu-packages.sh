@@ -1,12 +1,12 @@
 #!/bin/sh
 sudo apt update
 sudo apt upgrade
-sudo apt install nodejs-legacy git
+sudo apt install nodejs git make
 
 # Install vim from source
 cd /tmp
 git clone https://github.com/vim/vim.git
-sudo apt install ncurses-dev ncurses-devel
+sudo apt install ncurses-dev ncurses-devel libncursesw5-dev libncurses5-dev libncursesw5 libncurses5
 
 cd vim
 make
