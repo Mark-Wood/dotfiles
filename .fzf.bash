@@ -1,9 +1,9 @@
 # Setup fzf
 # ---------
 
-if [ -e ~/.linuxbrew/opt/fzf/bin ]; then
-  source ~/.linuxbrew/opt/fzf/shell/completion.bash 2> /dev/null
-  source ~/.linuxbrew/opt/fzf/shell/key-bindings.bash
+if [ -e /home/linuxbrew/.linuxbrew/opt/fzf/bin ]; then
+  source /home/linuxbrew/.linuxbrew/opt/fzf/shell/completion.bash 2> /dev/null
+  source /home/linuxbrew/.linuxbrew/opt/fzf/shell/key-bindings.bash
 fi
 
 if _has fzf && _has ag; then

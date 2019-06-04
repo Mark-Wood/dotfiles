@@ -19,10 +19,10 @@ if [ -n "$BASH_VERSION" ]; then
 
   _prepend_to_path ~/.local/bin
   _prepend_to_path ~/bin
-  _prepend_to_path ~/.linuxbrew/bin
+  _prepend_to_path /home/linuxbrew/.linuxbrew/bin
 
-  if [ -e ~/.linuxbrew/opt/fzf/bin ]; then
-    _append_to_path ~/.linuxbrew/opt/fzf/bin
+  if [ -e /home/linuxbrew/.linuxbrew/opt/fzf/bin ]; then
+    _append_to_path /home/linuxbrew/.linuxbrew/opt/fzf/bin
   fi
 else
   PATH="$HOME/bin:$HOME/.local/bin:$PATH"

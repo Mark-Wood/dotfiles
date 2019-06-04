@@ -213,7 +213,7 @@ let mapleader = ","
 let maplocalleader = ","
 
 " FZF (replaces Ctrl-P, FuzzyFinder and Command-T)
-set rtp+=~/.linuxbrew/opt/fzf
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf
 nmap ; :Buffers<CR>
 nmap <Leader>r :Tags<CR>
 nmap <Leader>t :Files<CR>
