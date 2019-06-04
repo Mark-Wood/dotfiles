@@ -24,6 +24,9 @@ if [ -n "$BASH_VERSION" ]; then
   if [ -e /home/linuxbrew/.linuxbrew/opt/fzf/bin ]; then
     _append_to_path /home/linuxbrew/.linuxbrew/opt/fzf/bin
   fi
+
+  # FZF
+  source ~/.fzf.bash
 else
   PATH="$HOME/bin:$HOME/.local/bin:$PATH"
 fi

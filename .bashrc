@@ -140,6 +140,3 @@ _append_to_path() {
   fi
 }
 
-# FZF
-source ~/.fzf.bash
-
