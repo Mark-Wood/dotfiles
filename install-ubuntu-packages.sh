@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo apt -y update
 sudo apt -y upgrade
-sudo apt -y install nodejs git make
+sudo apt -y install nodejs git make gcc
 
 # Install vim from source
 cd /tmp
