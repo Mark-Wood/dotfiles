@@ -19,11 +19,6 @@ if [ -n "$BASH_VERSION" ]; then
 
   _prepend_to_path ~/.local/bin
   _prepend_to_path ~/bin
-  _prepend_to_path /home/linuxbrew/.linuxbrew/bin
-
-  if [ -e /home/linuxbrew/.linuxbrew/opt/fzf/bin ]; then
-    _append_to_path /home/linuxbrew/.linuxbrew/opt/fzf/bin
-  fi
 
   # FZF
   source ~/.fzf.bash
